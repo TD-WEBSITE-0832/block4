@@ -1,82 +1,58 @@
 body{
-    background-color: darkgray;
+    background: linear-gradient(to right, red, yellow);
 }
-.ph{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 1.5px solid black;
-    margin-left: 70px;
+.block{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-.block1{
+.cardd{
+    padding: 20px;
+    width: 600px;
+    max-width: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 300px;
-    background-color: white;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius:20px ;
-    padding: 40px;
+    background: whitesmoke;
+    border-radius: 20px;
 }
-.tx1{
-    font-size: 15px;
-    color: darkblue;
-}
-.sp1{
-    font-size: 30px;
-    margin-left: 15px;
-    font-weight: 900;
-}
-.tx2{
-    color: darkblue;
-}
-.sp2{
-    font-size: 20px;
-}
-#da {
-  text-decoration: none; 
-  color: darkblue;      
-}
-#da:hover {
-  text-decoration: underline; 
-  transition: 0.5s;
-}
-#input{
+.div{
     padding: 20px;
-    background-color: blanchedalmond;
-    border-radius: 15px;
-    color: darkblue;
-    width: 200px;
-     border: 1.5px solid darkblue;
+    height: 400px;
+    width: 600px;
+      background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  flex-wrap: wrap;
 }
-#input:hover{
-     background-color: darkblue;
-      color: white;
-      border: 1.5px solid black;
-      transition: 1.2s;
+.txt{
+    text-decoration: none;
+    margin-left: 20px;
+    transition: all 0.6s ease-in-out;
 }
-.card3{
-     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.txt:hover{
+    text-decoration: underline;
+    transition: all 0.6s ease-in-out;
+    transform: translateY(-5px);
 }
-p, a{
-    text-align: center;
-}
-.bt1{
-    background-color:white ;
-    border: 1.5px solid darkblue;
-    border-radius: 16px;
-    padding: 20px;
-}
-.bt1:hover{
-     background-color: darkblue;
-    border: 1.5px solid black;
-    color: white;
-    transition: 0.9s;
-    border-radius: 16px;
-    padding: 20px;
+@media (max-width:1280px){
+    .txt{
+        color: red;
+    }
+    .block{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .cardd{
+         display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 20%;
+    }
 }
