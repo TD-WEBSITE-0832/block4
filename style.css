@@ -1,0 +1,82 @@
+body{
+    background-color: darkgray;
+}
+.ph{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1.5px solid black;
+    margin-left: 70px;
+}
+.block1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+    background-color: white;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:20px ;
+    padding: 40px;
+}
+.tx1{
+    font-size: 15px;
+    color: darkblue;
+}
+.sp1{
+    font-size: 30px;
+    margin-left: 15px;
+    font-weight: 900;
+}
+.tx2{
+    color: darkblue;
+}
+.sp2{
+    font-size: 20px;
+}
+#da {
+  text-decoration: none; 
+  color: darkblue;      
+}
+#da:hover {
+  text-decoration: underline; 
+  transition: 0.5s;
+}
+#input{
+    padding: 20px;
+    background-color: blanchedalmond;
+    border-radius: 15px;
+    color: darkblue;
+    width: 200px;
+     border: 1.5px solid darkblue;
+}
+#input:hover{
+     background-color: darkblue;
+      color: white;
+      border: 1.5px solid black;
+      transition: 1.2s;
+}
+.card3{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+p, a{
+    text-align: center;
+}
+.bt1{
+    background-color:white ;
+    border: 1.5px solid darkblue;
+    border-radius: 16px;
+    padding: 20px;
+}
+.bt1:hover{
+     background-color: darkblue;
+    border: 1.5px solid black;
+    color: white;
+    transition: 0.9s;
+    border-radius: 16px;
+    padding: 20px;
+}
