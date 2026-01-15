@@ -102,6 +102,24 @@ const d=y>200;
 
 
 
+const loginBtn = document.getElementById("logobt");
+const signupBtn = document.getElementById("logobt1");
+
+const loginModal = document.getElementById("loginModal");
+const signupModal = document.getElementById("signupModal");
+
+loginBtn.onclick = () => {
+  loginModal.style.display = "flex";
+};
+
+signupBtn.onclick = () => {
+  signupModal.style.display = "flex";
+};
+
+function closeModal(){
+  loginModal.style.display = "none";
+  signupModal.style.display = "none";
+}
 
 
 

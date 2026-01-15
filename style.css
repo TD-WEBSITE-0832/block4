@@ -1,58 +1,149 @@
+@import url('https://fonts.googleapis.com/css2family=Poppins:wght@400;500;600&display=swap');
+
+
+*{
+    font-family: 'Poppins' , sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    background: linear-gradient(to right, red, yellow);
+    background-image: url(https://www.sony-mea.com/image/bc6d25fa6371c2899ce704a2bed7614c?fmt=png-alpha&wid=960);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
-.block{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 30px;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.cardd{
-    padding: 20px;
-    width: 600px;
-    max-width: 30%;
+.big{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: whitesmoke;
-    border-radius: 20px;
+    min-height: 110vh;
+    background: rgba(39, 39, 39, 0.4);
 }
-.div{
-    padding: 20px;
-    height: 400px;
-    width: 600px;
-      background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(12px) saturate(180%);
-  -webkit-backdrop-filter: blur(12px) saturate(180%);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  flex-wrap: wrap;
+.block{
+    position: fixed;
+    display: flex;
+    top: 0;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);
+    z-index: 100;
 }
-.txt{
+.card .tx{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+.div ul{
+    display: flex;
+}
+.div ul li{
+    list-style-type: none;
+}
+.div ul li .txt{
     text-decoration: none;
-    margin-left: 20px;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0px 25px;
+}
+.txt:hover, .active{
+    border-bottom: 2px solid #fff;
+}
+.div1 .bt{
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+#logobt{
+    margin-left: 15px;
+}
+.bt.btt{
+    background: rgba(255, 255, 255, 0.7);
+}
+.bt:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+.bt.bt.btt:hover{
+    background: rgba(255, 255, 255, 0.5);
+}
+.div2{
+    display: none;
+}
+
+
+
+
+.modal{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(8px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal-box{
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    width: 320px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    position: relative;
     transition: all 0.6s ease-in-out;
 }
-.txt:hover{
-    text-decoration: underline;
+.modal-box:hover{
+    box-shadow: 0px 10px 40px 0px yellow,
+    0px -20px 40px 0px red;
     transition: all 0.6s ease-in-out;
-    transform: translateY(-5px);
 }
-@media (max-width:1280px){
-    .txt{
-        color: red;
-    }
-    .block{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .cardd{
-         display: flex;
-        align-items: center;
-        flex-direction: column;
-        max-width: 20%;
-    }
+.modal-box h2{
+    margin-bottom: 20px;
 }
+
+.modal-box input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+}
+
+.modal-box button{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.6s ease-in-out;
+}
+
+.modal-box button:hover{
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    transition: all 0.6s ease-in-out;
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+
+
